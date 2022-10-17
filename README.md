@@ -55,3 +55,4 @@ Le menu a gauche vous invitera à vous diriger vers le menu des modules pour cr�
 Chaque franchise peut avoir plusieurs salles mais une salle appartient à une seule franchise : ainsi, à la suppression d'une franchise, les salles liées seront également supprimées.
 
 En tant que boutique, vous aurez accès à une interface en lecture pour consulter les droits accordées à vos salles ainsi qu'à votre profil. Les identifiants vous seront communiqués par mail lorsque l'administrateur aura créé votre compte. Vous pouvez répondre à ce mail pour toute demande.# Ecfflower
+# Ecfflower
