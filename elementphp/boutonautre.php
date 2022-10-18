@@ -1,0 +1,1 @@
+<a href="ensavoirplus.php?id=<?= $franchiselist->getId() ?>" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus">En savoir plus</a>

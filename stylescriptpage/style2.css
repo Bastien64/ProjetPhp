@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+
+@media  screen and (min-width: 800px){
+
+body {
+    background-image: url(../image/fleur.jpg);
+        background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*MENU GAUCHE*/
+.menugauche {
+    background-color: rgba(255, 255, 255, 0.80);
+    height: 80vh;
+    width: 20vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5vw;
+    margin-bottom: 5vh;
+}
+.bouton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 75%;
+    height: 60%;
+
+
+}
+a {
+    text-decoration: none !important;
+    color: hsl(0, 0%, 0%) !important;
+
+}
+/*MENU DROIT*/
+.carredroit {
+    background-color: rgba(255, 255, 255, 0.30);
+    height: 80vh;
+    width: 60vw;
+    margin-top: 10vh;
+}
+
+.maintop {
+    padding-left: 3vh;
+    padding-right: 3vh;
+    border-bottom: solid 2px;
+    border-color: rgb(242, 195, 204);
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+
+/*LOGO*/
+.logoadmin  {
+    width: 7vh;
+    height: 7vh;
+}
+
+.logo {
+    width: 3vh;
+    height: 3vh;
+}
+
+.logogestion {
+    width: 5vh;
+    height: 5vh;
+}
+
+
+/*BARRE*/
+.barre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: grey !important;
+    display: flex;
+    justify-content: space-around;
+    align-items : center;
+    padding: 3rem;
+    opacity: 1;
+    z-index:99;
+}
+
+.btn {
+    display: flex;
+}
+
+#green {
+    color : red !important ;
+}
+}
+
+@media  screen and (max-width: 768px){
+
+    body {
+        background-image: url(../image/fleur.jpg);
+            background-size: contain;
+        background-size: 100%;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    /*MENU GAUCHE*/
+    .menugauche {
+        background-color: rgba(255, 255, 255, 0.80);
+        height: 15vh;
+        width: 100vw;
+        margin-top: 10vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    
+    .gestion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5vw;
+        margin-bottom: 5vh;
+    }
+    .bouton {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 100%;
+        height: 60%;
+        margin-left: 1vw;
+    
+    
+    }
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    
+    }
+    /*MENU DROIT*/
+    .carredroit {
+        background-color: rgba(255, 255, 255, 0.30);
+        height: 80vh;
+        width: 100vw;
+        margin-top: 2vh;
+    }
+    
+    .maintop {
+        padding-left: 3vh;
+        padding-right: 3vh;
+        border-bottom: solid 1px;
+        border-color: rgb(242, 195, 204);
+    }
+    /*LOGO*/
+    .logoadmin  {
+        width: 7vh;
+        height: 7vh;
+    }
+    
+    .logo {
+        width: 3vh;
+        height: 3vh;
+    }
+    
+    .logogestion {
+        width: 5vh;
+        height: 5vh;
+    }
+
+    /*NAVBAR*/
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*BARRE*/
+.barre {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: grey !important;
+    display: flex;
+    justify-content: space-around;
+    align-items : center;
+    padding: 3rem;
+    opacity: 1;
+    z-index:99;
+}
+
+.btn {
+    display: flex;
+}
+}
