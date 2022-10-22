@@ -64,13 +64,13 @@
                 <section class="d-flex flex-wrap justify-content-center">
                     <?php foreach ($franchiselists as $franchiselist) :
                     ?>
-                        <div class="card rougefleur m-4 shadow">
+                        <div class="card rougefleur m-4 shadow ">
 
-                            <div class="card-body boite">
+                            <div class="card-body boite animals statut statutclose">
                                 <h5 class="card-title bg-dark text-white">FRANCHISE ROUGE FLEUR </h5>
-                                <h4 class="card-text text-danger "><?php echo $franchiselist->getVille() ?></h4>
+                                <h4 class="card-text text-danger animals"><?php echo $franchiselist->getVille() ?></h4>
 
-                                <p class="card-text statut">STATUT : <?php echo $franchiselist->getStatut() ?> </p>
+                                <p class="card-text statut statutclose">STATUT : <?php echo $franchiselist->getStatut() ?> </p>
                                 
                                 <?php 
                                 if ($_SESSION['droit'] === '1') {

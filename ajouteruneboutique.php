@@ -59,7 +59,10 @@
             "envoyeremail" => $envoyeremail,
             "fleurspeciale" => $fleurspeciale,
         ]);
+
         $boutique->create($newboutique);
+
+        
         $to      = $mailresponsable;
         $subject = 'Sujet';
         $message = 'Bonjour,
@@ -123,6 +126,8 @@
                     </form>
                 </div>
             </div>
+
+
             <section class="d-flex flex-wrap justify-content-center">
                 <?php foreach ($boutiquelists as $boutiquelist) :
                     $fleurs =  $fleur->get($boutiquelist->getFleurspeciale());
@@ -137,6 +142,7 @@
                             <p class="card-text"><strong>Email responsable : </strong><?php echo $boutiquelist->getMailresponsable() ?></p>
                             <p class="card-text"><strong>Fleur speciale: </strong><?php echo $fleurs->getTypededroit() ?></p>
                             <p class="card-text"><strong>Option Email Client : </strong> <?php echo $emaildroit->getDescription() ?></p>
+                            <a href="update.php?id=<?= $boutiquelist->getVille() ?>" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus">Mettre a jour</a>
                         </div>
                     </div>
                 <?php endforeach ?>

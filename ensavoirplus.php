@@ -28,15 +28,15 @@
 
 
     $boutique = new boutiquecontroller();
-    $boutiquelists = $boutique->get($franchiselists->getId());
 
+    $boutiquelists = $boutique->get($franchiselists->getId());
+   
 
     $utilisateur = new utilisateurcontroller();
     $utilisateurs = $utilisateur -> getall();
 
     $envoyerdesemail = new envoyerdesemailscontroller();
     $emaildroit = $envoyerdesemail->get($boutiquelists->getEnvoyeremail());  
-
     $fleurspecial = new fleurspecialcontroller();
     $fleurs =  $fleurspecial->get($boutiquelists->getFleurspeciale());
 

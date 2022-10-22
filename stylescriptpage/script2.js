@@ -8,29 +8,44 @@ btnboot.addEventListener ('click', function(){
     barre.style.width = "0";
 });
 
-
 const btn = document.getElementById ('open');  //Bootstrap bottum in my page
-const boite = document.getElementsByClassName('boite');
-const statut = document.getElementsByClassName('statut');
-console.log (statut)
-console.log (statut.length)
-
-
+const x = document.getElementsByClassName('statut');
 btn.addEventListener ('click', function(){
-for (let i = 0; i < statut.length; i++) {
-    var price = statut[i].innerText;
-    const prices = new Array(price);
-    console.log(prices);
-    if (prices == "STATUT : Open" ) {
-        console.log("Ce magasin est ouvert");
-        document.getElementById('p1').innerHTML = "Des Franchises sont effectivement ouvertes, la liste se trouve ci dessous.";
-    } else {console.log("Ce magasin est ferme");
+for (let i = 0; i < x.length; i++) {
+    var price = x[i].innerHTML.includes('STATUT : Close');
+    console.log (price);
+    if (price !== false ) {
+        x[i].style.display="none";
+    } else {console.log("");
     }
-/*
-    const pricesConcat = prices.concat(prices);
-    console.log(pricesConcat)
-    */
 }}) ; 
-    /*
 
-*/
+const btnred = document.getElementById ('close');  //Bootstrap bottum in my page
+const y = document.getElementsByClassName('statutclose');
+btnred.addEventListener ('click', function(){
+for (let i = 0; i < x.length; i++) {
+    var price = x[i].innerHTML.includes('STATUT : Close');
+    console.log (price);
+    if (price == false ) {
+        x[i].style.display="none";
+    } else {console.log("");
+    }
+}}) ; 
+
+
+function search_ville() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('animals');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)){
+        console.log(!x[i].innerHTML) 
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+

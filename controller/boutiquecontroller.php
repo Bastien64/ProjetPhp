@@ -28,6 +28,18 @@ class boutiquecontroller
         $req->execute();
     }
 
+    public function update(boutique $boutique)
+    {
+        $req = $this->db->prepare("UPDATE `boutique` ( ville, adresseboutique, mailresponsable, envoyeremail, fleurspeciale) VALUE ( :ville, :adresseboutique, :mailresponsable, :envoyeremail, :fleurspeciale)");
+        $req->bindValue(":ville", $boutique->getVille(), PDO::PARAM_STR);
+        $req->bindValue(":adresseboutique", $boutique->getAdresseboutique(), PDO::PARAM_STR);
+        $req->bindValue(":mailresponsable", $boutique->getMailresponsable(), PDO::PARAM_STR);
+        $req->bindValue(":envoyeremail", $boutique->getEnvoyeremail(), PDO::PARAM_STR);
+        $req->bindValue(":fleurspeciale", $boutique->getFleurspeciale(), PDO::PARAM_STR);
+        $req->execute();
+    }
+
+
     public function getAll()
     {
         $boutiques = [];
@@ -50,6 +62,17 @@ class boutiquecontroller
         $boutique = new boutique($data);
         return $boutique;
     }
+
+    public function getid( $id): boutique
+    {
+        $req = $this->db->prepare("SELECT * FROM `boutique` WHERE id = :id");
+        $req->bindParam(":id", $id, PDO::PARAM_INT);
+        $req->execute();
+        $data = $req->fetch();
+        $boutique = new boutique($data);
+        return $boutique;
+    }
+
 
  public function delete (int $id) {
     $req = $this->db->prepare ("DELETE FROM `boutique` WHERE id= :id");
