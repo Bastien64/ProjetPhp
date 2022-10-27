@@ -1,0 +1,23 @@
+{
+  "name": "ecf",
+  "version": "1.0.0",
+  "description": "Projet de l'ecf",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bastien64/ECF.git"
+  },
+  "keywords": [
+    "application",
+    "projet"
+  ],
+  "author": "Bastien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bastien64/ECF/issues"
+  },
+  "homepage": "https://github.com/Bastien64/ECF#readme"
+}

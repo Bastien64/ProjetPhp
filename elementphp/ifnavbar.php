@@ -14,5 +14,5 @@
 
         <div>
             <img class="logo" src="image/3-circle.svg" alt="">
-            <a href="touteslesfranchises.php">Modifier des permissions</a>
+            <a href="modifierlesdroits.php">Modifier des permissions</a>
         </div>
