@@ -1,4 +1,4 @@
-
+<!-- ELEMENT NAVBAR.php -->
 
 <div class="menugauche">
     <div class="gestion">
@@ -10,28 +10,17 @@
     </div>
 
     <?php
-            if ($_SESSION['droit'] === '1') {
-                include('elementphp/ifnavbar.php');
-            } else {
-                print_r('');
-            }
+    if ($_SESSION['droit'] === '1') {
+        include('elementphp/ifnavbar.php');
+    } else {
+        print_r('');
+    }
+    ?>
 
-            ?>
-
-        <div>
-            <?=
-                $_SESSION ? '<a class="nav-link" href="disconnect.php">Se déconnecter</a>' :
-                    '<a class="nav-link" href="index.php">Se connecter</a>'
-            ?>
-        </div>
-
-        <!--
-        <div>
-            <img class="logo" src="image/3-circle.svg" alt="">
-            <a href="modifierunefranchise.php">Modifier une Franchise</a>
-        </div>
-        -->
+    <div>
+        <?=
+        $_SESSION ? '<a class="nav-link" href="disconnect.php">Se déconnecter</a>' :
+            '<a class="nav-link" href="index.php">Se connecter</a>'
+        ?>
     </div>
-
-
 </div>

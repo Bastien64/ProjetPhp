@@ -32,10 +32,16 @@
     $boutique = new boutiquecontroller();
     ?>
     <main>
+        <!-- NAVBAR ZONE 1-->
         <?php
         include('elementphp/navbar.php');;
         ?>
+        <!-- FIN NAVBAR ZONE 1-->
+
+
         <div id="barre1">
+
+        <!-- POPUP D'UTILISATEUR -->
             <?php
             if ($_SESSION['droit'] === '1') {
                 include('elementphp/barreaccueil.php');
@@ -44,7 +50,10 @@
             }
             ?>
         </div>
-        <!-- MENU DROIT  -->
+        <!-- FIN POPUP D'UTILISATEUR -->
+
+
+        <!-- FILTRE ET SEARCHBAR ZONE 2 ET 3-->
         <div class="carredroit">
             <?php
             if ($_SESSION['droit'] === '1') {
@@ -61,17 +70,22 @@
                     print_r('');
                 }
                 ?>
+        <!-- FIN FILTRE ET SEARCHBAR ZONE 2 ET 3-->
+
                 <section class="d-flex flex-wrap justify-content-center">
                     <?php foreach ($franchiselists as $franchiselist) :
                     ?>
                         <div class="card rougefleur m-4 shadow ">
 
-                            <div class="card-body boite animals statut statutclose">
+                            <div class="card-body boite villes statut statutclose">
                                 <h5 class="card-title bg-dark text-white">FRANCHISE ROUGE FLEUR </h5>
-                                <h4 class="card-text text-danger animals"><?php echo $franchiselist->getVille() ?></h4>
+                                <h4 class="card-text text-danger villes"><?php echo $franchiselist->getVille() ?></h4>
 
                                 <p class="card-text statut statutclose">STATUT : <?php echo $franchiselist->getStatut() ?> </p>
-                                
+                                        <!--  .... -->
+
+
+                                 <!-- BOUTON EN SAVOIR PLUS/SUPPRIMER ZONE 4 -->
                                 <?php 
                                 if ($_SESSION['droit'] === '1') {
                                    include ('elementphp/boutonadmin.php');
@@ -80,10 +94,13 @@
                                     print_r('');
                                 } 
                                 ?>
+                                <!-- FIN BOUTON EN SAVOIR PLUS/SUPPRIMER ZONE 4 -->
                             </div>
                         </div>
                     <?php endforeach ?>
                 </section>
+
+
             </div>
         </div>
     </main>

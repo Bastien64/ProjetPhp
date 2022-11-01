@@ -25,7 +25,6 @@ const y = document.getElementsByClassName('statutclose');
 btnred.addEventListener ('click', function(){
 for (let i = 0; i < x.length; i++) {
     var price = x[i].innerHTML.includes('STATUT : Close');
-    console.log (price);
     if (price == false ) {
         x[i].style.display="none";
     } else {console.log("");
@@ -36,7 +35,7 @@ for (let i = 0; i < x.length; i++) {
 function search_ville() {
     let input = document.getElementById('searchbar').value
     input=input.toLowerCase();
-    let x = document.getElementsByClassName('animals');
+    let x = document.getElementsByClassName('villes');
       
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)){
