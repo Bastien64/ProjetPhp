@@ -1,7 +1,7 @@
 # flower
 Pour tester l'application en tant qu'administrateur :
 
-Lien du site en ligne  : http://vps-d23be635.vps.ovh.net/ECF/
+Lien du site en ligne  : https://bastien.sitetest.best/ECF/
 
     Login : Admin
     Mdp : admin
