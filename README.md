@@ -1,8 +1,7 @@
 # flower
-Test de l'application
 Pour tester l'application en tant qu'administrateur :
 
-Lien du site en ligne
+Lien du site en ligne  : http://vps-d23be635.vps.ovh.net/ECF/
 
     Login : Admin
     Mdp : admin
