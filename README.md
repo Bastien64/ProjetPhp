@@ -34,6 +34,8 @@ Creez un fichier .env à la racine du dossier et y intégrer les variables d'env
      DATABASE_NAME = [ECF]
      DATABASE_HOST = [localhost]
 
+
+Pour la base de donnees, un fichier ecf.sql est disponible pour la mettre en place en local. - ATTENTION @@, verification.php dans le dossier Password, fait appel a la methode Msqli pour la connexion a la base de donnees. 
 Lancer l'application avec :
 
      npm run dev
@@ -47,7 +49,7 @@ En tant qu'administrateur, vous allez pouvoir gérer :
      Les salles
      Les Utilisateurs de l'application 
 
-En vous connectant, vous verrez d'office la liste de toutes les franchises sous la forme de cartes. Sur chacune d'entre elles, se trouvent 2 boutons d'action qui vous invitent à  supprimer ou afficher la franchise concernée avec la boutique s'il y a lieu. Une barre de recherche n'est pas a jour pour l'instant (17/10/2022)
+En vous connectant, vous verrez d'office la liste de toutes les franchises sous la forme de cartes. Sur chacune d'entre elles, se trouvent 2 boutons d'action qui vous invitent à  supprimer ou afficher la franchise concernée avec la boutique s'il y a lieu. Une barre de recherche et des boutons de tri sont disponibles pour facilite la lecture.
 
 Le menu a gauche vous invitera à vous diriger vers le menu des modules pour créer, modifier ou supprimer des Franchises, boutiques
 
