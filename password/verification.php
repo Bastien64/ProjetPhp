@@ -10,7 +10,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
    $db = new mysqli(getenv('DATABASE_HOST'), getenv('DATABASE_USER'), getenv('DATABASE_PASSWORD'),getenv('DATABASE_NAME'))
           or die('could not connect to database');
     
-          var_dump($db);
+
     // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
     // pour éliminer toute attaque de type injection SQL et XSS
     $username = mysqli_real_escape_string($db,htmlspecialchars($_POST['username'])); 
@@ -19,6 +19,8 @@ if(isset($_POST['username']) && isset($_POST['password']))
     {
         $requete = "SELECT droit FROM utilisateur where 
               nom_utilisateur = '".$username."' and mot_de_passe = '".$password."' ";
+
+              //.....................
         $exec_requete = mysqli_query($db,$requete);
         $reponse      = mysqli_fetch_array($exec_requete);
         $count = $reponse['droit'];
