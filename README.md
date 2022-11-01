@@ -46,7 +46,7 @@ En tant qu'administrateur, vous allez pouvoir gérer :
      Les salles
      Les Utilisateurs de l'application 
 
-En vous connectant, vous verrez d'office la liste de toutes les franchises sous la forme de cartes. Sur chacune d'entre elles, se trouvent 2 boutons d'action qui vous invitent à  supprimer ou afficher la franchise concernée avec la boutique s'il y a lieu. Une barre de recherche n'est pas a jour pour l'instant (17/10/2022)
+En vous connectant, vous verrez d'office la liste de toutes les franchises sous la forme de cartes. Sur chacune d'entre elles, se trouvent 2 boutons d'action qui vous invitent à  supprimer ou afficher la franchise concernée avec la boutique s'il y a lieu. Une barre de recherche  et des boutons de tri sont disponibles pour ameliorer l'affichage.
 
 Le menu a gauche vous invitera à vous diriger vers le menu des modules pour créer, modifier ou supprimer des Franchises, boutiques
 
