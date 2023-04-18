@@ -4,7 +4,7 @@ Pour tester l'application en tant qu'administrateur :
 Lien du site en ligne  : https://bastien.sitetest.best/ECF/
 
     Login : Admin
-    Mdp : admin
+    Mdp : 1254zzzzz
 
  Vous pourrez vous connecter en tant que "Boutique" une fois cree dans l'application à partir du compte administrateur. Les login seront envoyés par mail. 
 Suivant les droits, Boutique ou Visiteur l'interface differe 
